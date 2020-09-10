@@ -1,0 +1,217 @@
+@media (max-width: 1200px) {
+    #about .box {
+        padding: 40px 20px 0 20px;
+    }
+
+    #about .box .title {
+        margin-bottom: 15px;
+    }
+
+    #about .box ul li {
+        margin-bottom: 18px;
+    }
+
+    #about .box-img img.last {
+        height: 450px;
+    }
+
+    #about .box .item img {
+        margin-right: 20px;
+        width: 25px;
+    }
+
+    #about {
+        padding: 60px 0 40px 0;
+    }
+
+    #skills {
+        padding: 60px 0 80px 0;
+        height: auto;
+    }
+
+    #skills .section-title {
+        margin-bottom: 30px;
+    }
+
+    #skills .item .progress {
+        background: #ffffff;
+        opacity: 1;
+        width: 100%;
+        height: 20px;
+    }
+
+    #skills .item p img {
+        width: 30px;
+        height: 30px;
+    }
+    #skills .item p {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+    #skills .title {
+        margin: 40px 0 20px 0;
+        font-size: 20px;
+    }
+    #portfolio {
+        padding: 45px 0;
+    }
+    #portfolio .section-subtitle {
+        font-size: 15px;
+        color: #4e555b;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    #portfolio .info {
+        background: #999999;
+        margin-top: -5px;
+        padding: 10px;
+        height: 70px;
+    }
+    #portfolio .info p {
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 991px) {
+    #hero .items .box h1 {
+        width: 90%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #hero .items .box p {
+        font-size: 20px;
+        color: #C1915C;
+        margin: 10px 0 25px 0;
+    }
+
+    .container {
+        padding: 0 40px;
+        max-width: 100%;
+    }
+
+
+    #about .box {
+        padding: 20px 20px;
+    }
+    #about .box ul li {
+        margin-bottom: 8px;
+    }
+    #about .box .title {
+        font-size: 17px;
+        line-height: 15px;
+        margin-bottom: 15px;
+    }
+    #about .box-img img {
+        height: auto;
+        margin-top: 50px;
+        object-fit: contain;
+        margin-bottom: 30px;
+    }
+    #about .box-img img.last {
+        height: 300px;
+        object-fit: cover;
+    }
+    #contacts .box-form {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px) {
+    #about .box-img {
+        text-align: center;
+    }
+    #about .box {
+        padding: 0 0 10px 0;
+    }
+    #about .box-img img {
+        height: 300px;
+        margin-top: 0;
+    }
+    #about .box-img img.last {
+        height: 400px;
+        width: 70%;
+    }
+    #skills {
+        padding: 35px 0 50px 0;
+    }
+    #skills .item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    #skills .item p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    #about {
+        padding: 20px 0 30px 0;
+    }
+    #about .box-img img.last {
+        height: 350px;
+        width: 100%;
+    }
+    #about .box-img img.laster {
+        margin-bottom: 0;
+    }
+    #about .box-img img {
+        height: auto;
+        margin-top: 0;
+    }
+    #about .box .item {
+        margin-bottom: 10px;
+    }
+    #about .box .item p {
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    #skills .item p {
+        width: 100%;
+    }
+    #skills .section-title {
+        margin-bottom: 20px;
+    }
+    #portfolio .info {
+        background: #333333;
+        padding: 15px 10px;
+        height: auto;
+    }
+    #portfolio .info p {
+        color: #FFFFFF;
+    }
+    #contacts .box-form {
+        width: auto;
+    }
+    #contacts .box-form .button {
+        height: 48px;
+    }
+    #contacts {
+        padding: 30px 0;
+    }
+    footer {
+        background: #000000;
+        padding: 15px 0 20px 0;
+    }
+    footer .footer {
+        justify-content: center;
+    }
+    footer .footer .logo{
+        color: #C1915C;
+        font-weight: 700;
+        font-style: italic;
+    }
+    footer .footer nav {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+
+}
