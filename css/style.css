@@ -35,7 +35,112 @@ body {
   overflow-x: hidden;
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 400; }
+.burger-menu {
+  position: relative;
+  display: none;
+}
+.burger-menu_button{
+  position: relative;
+}
+.burger-menu_button img {
+  width: 28px;
+}
+.burger-menu_button.two img {
+  width: 20px;
+}
+.burger-menu_nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 20px 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  overflow-y: auto;
+  left: 0;
+  top: -200%;
+  transition: 0.4s;
+  background: rgba(000, 000, 000, 0.9);
+}
+.burger-menu_nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.burger-menu_nav ul li {
+  padding: 0 0 10px 0!important;
+}
+.burger-menu_nav ul li .burger-menu_link{
+  text-align: left;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  color: #FFFFFF!important;
+  margin-right: auto;
+}
+.burger-menu_nav .button {
+  height: 48px;
+  width: 220px;
+  border-radius: 4px;
+  background: #C1915C;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px auto;
+}
 
+.burger-menu_active.burger-menu_nav {
+  top: 0;
+}
+.burger-menu_nav ul li .burger-menu_link:hover {
+  border-bottom: 1px solid #FFffff;
+}
+.burger-menu_link:hover,
+.burger-menu_link:focus {
+  color: #ffffff;
+  font-weight: 800;
+}
+.burger-menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.burger-menu_active .burger-menu_button {
+  z-index: -1;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  opacity: 1;
+  animation-name: show-header;
+  animation-duration: 1s;
+  background: #000000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px 0 20px 0;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #009B9D;
+  margin-bottom: 40px;
+}
 header {
   z-index: 5;
   width: 100%;
@@ -52,7 +157,8 @@ header {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     header .header-top .logo {
-      color: #f7f7f7;
+      color: #C1915C;
+      font-weight: 600;
       font-size: 23px;
       float: left;
       font-family: 'Lato', sans-serif;

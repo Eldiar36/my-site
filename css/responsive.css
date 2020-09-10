@@ -73,12 +73,25 @@
 
 }
 @media (max-width: 991px) {
+    header  .header-top .nav,
+    header  .header-top .contacts {
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    #hero {
+        height: 600px;
+        padding-top: 160px;
+    }
+    #hero:before {
+        height: 100%;
+    }
     #hero .items .box h1 {
         width: 90%;
         font-size: 30px;
         line-height: 40px;
     }
-
     #hero .items .box p {
         font-size: 20px;
         color: #C1915C;
@@ -149,6 +162,25 @@
     }
 }
 @media (max-width: 480px) {
+    #hero {
+        height: 450px;
+        padding-top: 130px;
+    }
+    #hero .items .box h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #hero .items .box p {
+        font-size: 17px;
+        line-height: 21px;
+        margin: 10px 0 0 0;
+    }
+    #hero .items .box .btn-box {
+        margin-top: 45px;
+    }
+    #hero .items .box .arrow-down {
+        display: none;
+    }
     #about {
         padding: 20px 0 30px 0;
     }
