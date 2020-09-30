@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     //E-mail Ajax Send
@@ -78,3 +79,4 @@ jQuery(window).scroll(function(){
         }
     })
 });
+

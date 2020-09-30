@@ -216,7 +216,6 @@ header .header-top .logo p:hover:after {
     right: -22px;
     transform: rotate(0deg);
 }
-
 header .header-top .logo:hover {
     text-decoration: none;
 }
@@ -462,7 +461,9 @@ header .header-top .contacts .social a img {
     margin-right: 20px;
     width: 30px;
 }
-
+#about .box .item p {
+    width: 80%;
+}
 #about .box-img img {
     height: 400px;
     overflow: hidden;
@@ -584,7 +585,27 @@ header .header-top .contacts .social a img {
     font-weight: 700;
     margin-bottom: 30px;
 }
-
+ #tabs .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#tabs  .nav li a {
+    color: #000000;
+    font-size: 18px;
+    margin: 0 15px;
+}
+#tabs .nav li .active {
+    color: #C1915C!important;
+    font-weight: 700!important;
+}
+.tab {
+    display: none;
+}
+.tab.active{
+    display: block;
+}
 #portfolio .box {
     border-radius: 4px;
     height: 250px;
@@ -600,7 +621,6 @@ header .header-top .contacts .social a img {
     overflow: hidden;
     position: relative;
 }
-
 #portfolio .box.black {
     background: #000000;
 }
@@ -814,14 +834,40 @@ footer .footer {
     align-items: center;
 }
 
-footer .footer .logo {
-    color: #f7f7f7;
-    font-size: 23px;
+footer .footer .logo p {
+    color: #C1915C;
+    font-weight: 600;
+    font-size: 20px;
     float: left;
-    font-family: 'Lato', sans-serif;
+    font-family: emoji;;
+    font-style: italic;
     text-transform: capitalize;
+    padding-top: 5px;
+    margin-left: 5px;
+    position: relative;
 }
-
+footer .footer .logo p:after {
+    content: "36";
+    position: absolute;
+    top: 5px;
+    right: -22px;
+    color: #C1915C;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: emoji;
+    font-style: italic;
+    transform: rotate(90deg);
+    transition: .3s;
+}
+footer .footer .logo p:hover:after {
+    top: 5px;
+    right: -22px;
+    transform: rotate(0deg);
+}
+footer .footer .logo img {
+    width: 35px;
+    height: 35px;
+}
 footer .footer .logo:hover {
     text-decoration: none;
 }
@@ -918,4 +964,11 @@ footer .footer ul li a:hover {
     margin: 10px 10px 0 0 !important;
     opacity: 1!important;
 }
-
+.mfp-close {
+     width: 44px;
+     height: 44px;
+     line-height: 44px;
+     position: absolute;
+     right: -5px;
+     top: -15px;
+ }
