@@ -129,6 +129,19 @@
         margin-left: 0;
         margin-top: 30px;
     }
+    .white-popup-block {
+        padding: 30px 30px;
+    }
+    #call .section-title {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    #call .section-subtitle {
+        width: 100%;
+    }
+    .mfp-close-btn-in .mfp-close {
+        margin: 0!important;
+    }
 }
 @media (max-width: 767px) {
     #about .box-img {
@@ -162,6 +175,18 @@
     }
 }
 @media (max-width: 480px) {
+    #call .section-title {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    #call .section-subtitle {
+        width: 95%;
+        font-size: 14px;
+    }
+    .mfp-close-btn-in .mfp-close {
+        margin: 0!important;
+    }
     #hero {
         height: 450px;
         padding-top: 130px;

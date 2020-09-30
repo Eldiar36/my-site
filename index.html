@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -14,8 +16,11 @@
         <header class="header">
             <div class="container">
                 <div class="header-top">
-                <a href="#" class="logo">
-                    <img src="images/logo2.png" alt="">
+                <a href="#" class="logo d-flex align-items-center">
+                    <img src="images/KL%20RUNE-1.svg" style="width: 35px;height: 35px" alt="">
+                    <p class="name ">
+                        eldiar
+                    </p>
                 </a>
                  <ul class="nav">
                      <li>
@@ -73,7 +78,7 @@
                                 <li><a class="burger-menu_link"  href="#portfolio">Портфолио</a></li>
                                 <li><a class="burger-menu_link"  href="#contacts">Контакты</a></li>
                             </ul>
-                            <a href="#" class="button">
+                            <a href="#call" class="button popup-with-form">
                                 Обратный звонок
                             </a>
 
@@ -92,7 +97,7 @@
                             <h1>Привет,меня зовут Эльдияр Эркинбеков</h1>
                             <p>И я занимаюсь адаптивной версткой сайтов разных уровней</p>
                             <div class="btn-box">
-                                <a href="#">Связаться со мной</a>
+                                <a href="#call" class="popup-with-form sheen">Связаться со мной</a>
                             </div>
                             <div class="arrow-down">
                                 <a href="#about">
@@ -423,7 +428,7 @@
                         <p class="job">
                             Верстальщик
                         </p>
-                        <a href="#" class="button">
+                        <a href="#call" class="button popup-with-form">
                             Связаться со мной
                         </a>
                     </div>
@@ -457,12 +462,37 @@
         </div>
     </div>
 </footer>
+        <div id="call" class="m-auto col-lg-4 col-md-6 col-sm-7 col-11  white-popup-block mfp-hide">
+            <div class="popup-wrapper">
+                    <div class="row justify-content-center">
+                        <p class=" section-title">
+                            Пожалуйста, заполните форму
+                        </p>
+                        <p class="section-subtitle">Я свяжусь с вами в течение 15 минут и мы подробно обсудим ваш проект</p>
+                    </div>
+                    <form id="popup-form" action="">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Site Name">
+                        <input type="hidden" name="admin_email" value="eduit312@gmail.com">
+                        <input type="hidden" name="form_subject" value="Form Subject">
+                        <!-- END Hidden Required Fields -->
+                                <input type="text" name="Имя" placeholder="Ваше имя">
+                                <input type="text" name="E-mail" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
+                                <input type="text" name="Phone" placeholder="Ваш e-mail">
+                            <div class="btn-1">
+                                <button type="submit" >Связаться</button>
+                            </div>
+                    </form>
+            </div>
+            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        </div>
         <script
                 src="https://code.jquery.com/jquery-3.5.1.js"
                 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
                 crossorigin="anonymous"></script>
-        <script src="js/libs.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw=="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
 </body>

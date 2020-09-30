@@ -1,4 +1,23 @@
+$(document).ready(function() {
 
+    //E-mail Ajax Send
+    $("call").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Thank you!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
+});
 window.onscroll = function showHeader() {
     let header =    document.querySelector(".header");
     if (window.pageYOffset > 300) {
@@ -22,37 +41,7 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
-
 });
-/*function burgerMenu(selector) {
-    let menu = $(selector);
-    let button = menu.find(".burger-menu_button");
-    let links = menu.find("burger-menu_link");
-    let overlay = menu.find("burger-menu_overlay");
-    button.on("click",(e) => {
-        e.preventDefault();
-        toogleMenu();
-    });
-    links.on("click", () => toogleMenu());
-
-
-    overlay.on("click", () => toogleMenu());
-    function toogleMenu() {
-        menu.toggleClass('burger-menu_active');
-        menu.remove('burger-menu_active');
-        if (menu.hasClass('burger-menu_active')) {
-            $('body').css("overflow","hidden");
-        }
-        else  {
-            $("body").css("overflow","visible")
-        }
-    }
-    links.on("click", () => removeMenu());
-    function removeMenu(){
-        links.remove('burger-menu_active');
-    }
-}
-burgerMenu('.burger-menu');*/
 $('.burger-menu_button').on(  'click',function () {
     $('.burger-menu').toggleClass('burger-menu_active')
     $('.burger-menu_nav').toggleClass('burger-menu_active')
@@ -65,15 +54,7 @@ jQuery(document).ready(function($) {
     $('.popup-with-form').magnificPopup({
         type: 'inline',
         fixedContentPos: true
-
     });
-});
-jQuery('.image-popup-zoom').magnificPopup({
-    type: 'image',
-    zoom: {
-        enabled: true,
-        duration: 300 //
-    }
 });
 jQuery(function($){
     $("#skills").viewportChecker({
@@ -82,4 +63,18 @@ $(".progress-bar").hide();
             $(".progress-bar").show();
         }
     });
+});
+jQuery(window).scroll(function(){
+    var $sections = $('section');
+    $sections.each(function(i,el){
+        var top  = $(el).offset().top-300;
+        var bottom = top +$(el).height();
+        var scroll = $(window).scrollTop();
+        var id = $(el).attr('id');
+        if( scroll > top && scroll < bottom){
+            $('a.active').removeClass('active');
+            $('a[href="#'+id+'"]').addClass('active');
+
+        }
+    })
 });
