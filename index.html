@@ -657,14 +657,12 @@
                         <p class="section-subtitle">Я свяжусь с вами в течение 15 минут и мы подробно обсудим ваш проект</p>
                     </div>
                     <form id="popup-form" action="">
-                        <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="Site Name">
-                        <input type="hidden" name="admin_email" value="eduit312@gmail.com">
-                        <input type="hidden" name="form_subject" value="Form Subject">
-                        <!-- END Hidden Required Fields -->
-                                <input type="text" name="Имя" placeholder="Ваше имя">
-                                <input type="text" name="E-mail" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
-                                <input type="text" name="Phone" placeholder="Ваш e-mail">
+                                <label for="formName">Ваше имя</label>
+                                <input type="text" id="formName" class="_req" name="Имя">
+                                <label for="formNumber">Ваш номер телефона</label>
+                                <input type="text" id="formNumber" class="_req" name="Phone" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
+                                <label for="formMail">Ваш e-mail</label>
+                                <input type="text" id="formMail" class="_req _email" name="mail">
                             <div class="btn-1">
                                 <button type="submit" >Связаться</button>
                             </div>
