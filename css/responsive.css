@@ -123,7 +123,7 @@
     }
     #about .box-img img {
         height: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         object-fit: contain;
         margin-bottom: 30px;
     }
@@ -131,10 +131,17 @@
         height: 300px;
         object-fit: cover;
     }
+    #about .box-img img.laster {
+        margin-top: 20px;
+    }
+    #about .box-img img.two {
+        height: auto;
+        margin-top: 20px;
+    }
     #portfolio #tabs .nav-tabs {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         margin-bottom: 20px;
     }
@@ -157,6 +164,9 @@
     }
 }
 @media (max-width: 767px) {
+    #hero .items .box .btn-box a {
+        padding: 15px 20px;
+    }
     #about .box-img {
         text-align: center;
     }
@@ -186,23 +196,15 @@
     .section-title {
         font-size: 30px;
     }
+    #about .box-img img.two {
+        height: 500px;
+        margin-top: 20px;
+    }
 }
 @media (max-width: 480px) {
-    #call .section-title {
-        margin-top: 10px;
-        font-size: 18px;
-        line-height: 24px;
-    }
-    #call .section-subtitle {
-        width: 95%;
-        font-size: 14px;
-    }
-    .mfp-close-btn-in .mfp-close {
-        margin: 0!important;
-    }
     #hero {
-        height: 450px;
-        padding-top: 130px;
+        height: 500px;
+        padding-top: 115px;
     }
     #hero .items .box h1 {
         font-size: 25px;
@@ -215,6 +217,13 @@
     }
     #hero .items .box .btn-box {
         margin-top: 45px;
+        display: flex;
+        align-items: self-end;
+        flex-direction: column;
+    }
+    #hero .items .box .btn-box a:last-child {
+        margin-left: 0;
+        margin-top: 15px;
     }
     #hero .items .box .arrow-down {
         display: none;
@@ -222,12 +231,22 @@
     #about {
         padding: 20px 0 30px 0;
     }
+    #about .box-img img{
+        object-fit: contain;
+    }
+    #about .box-img img.two {
+        height: auto;
+        margin-top: 20px;
+    }
     #about .box-img img.last {
-        height: 350px;
+        height: auto;
         width: 100%;
+        object-fit: contain;
     }
     #about .box-img img.laster {
         margin-bottom: 0;
+        object-fit: contain;
+        margin-top: 0;
     }
     #about .box-img img {
         height: auto;

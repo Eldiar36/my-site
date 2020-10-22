@@ -351,11 +351,17 @@ header .header-top .contacts .social a img {
 
 #hero .items .box .btn-box {
     margin-top: 60px;
+    display: flex;
+    align-items: center;
 }
 
 #hero .items .box .btn-box a {
-    padding: 15px 50px;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 58px;
+    font-size: 15px;
     color: #C1915C;
     border: 1px solid #C1915C;
     border-radius: 8px;
@@ -919,4 +925,16 @@ footer .footer ul li a {
 
 footer .footer ul li a:hover {
     text-decoration: none;
+}
+.scrollup {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    text-indent: -9999px;
+    z-index: 998;
+    background: url(../images/icon_top.png) no-repeat;
 }
