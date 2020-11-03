@@ -74,7 +74,7 @@ body {
     left: 0;
     top: -200%;
     transition: 0.4s;
-    background: rgba(000, 000, 000, 0.9);
+    background: rgba(000, 000, 000);
 }
 
 .burger-menu_nav ul {
@@ -151,7 +151,7 @@ body {
     opacity: 1;
     animation-name: show-header;
     animation-duration: 1s;
-    background: #000000;
+    background: #333333;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     padding: 20px 0 20px 0;
 }
@@ -315,6 +315,7 @@ header .header-top .contacts .social a img {
 #hero {
     background: url("../images/black-styled-office-devices-picjumbo-com.jpeg") no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     z-index: 4;
     height: 100vh;
     padding-top: 300px;
@@ -490,13 +491,26 @@ header .header-top .contacts .social a img {
 #skills {
     position: relative;
     padding: 93px 0 145px 0;
-    background: #000000;
+    background: url("../images/skills.webp")no-repeat center fixed;
+    background-size: cover;
     height: 100vh;
 }
-
+#skills:before {
+    content: "";
+    background: #000000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
 #skills .section-title {
     margin-bottom: 50px;
     color: #C1915C;
+    position: relative;
+    z-index: 99;
 }
 
 #skills .title {
@@ -505,6 +519,8 @@ header .header-top .contacts .social a img {
     color: #C1915C;
     font-weight: 600;
     font-style: italic;
+    z-index: 99;
+    position: relative;
 }
 
 #skills .item {
@@ -518,6 +534,8 @@ header .header-top .contacts .social a img {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 30px;
+    position: relative;
+    z-index: 99;
 }
 
 #skills .item p {
@@ -557,6 +575,8 @@ header .header-top .contacts .social a img {
     font-size: 18px;
     margin-bottom: 5px;
     color: #C1915C;
+    position: relative;
+    z-index: 99;
 }
 
 @-webkit-keyframes loader {
@@ -602,14 +622,14 @@ header .header-top .contacts .social a img {
     justify-content: center;
     margin-bottom: 50px;
 }
-#tabs  .nav li a {
+.nav-tab{
     color: #000000;
     font-size: 18px;
     margin: 0 15px;
 }
-#tabs .nav li .active {
-    color: #C1915C!important;
-    font-weight: 700!important;
+ .nav-tab.active {
+    color: #C1915C;
+    font-weight: 700;
 }
 .tab {
     display: none;
@@ -687,7 +707,17 @@ header .header-top .contacts .social a img {
     height: 68px;
     margin-bottom: 30px;
 }
-
+.scale {
+    display: inline-block;
+    overflow: hidden;
+}
+.scale img {
+    transition: 1s;
+    display: block;
+}
+.scale img:hover {
+    transform: scale(1.3);
+}
 #contacts {
     padding: 70px 0;
 }

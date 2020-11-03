@@ -138,6 +138,9 @@
         height: auto;
         margin-top: 20px;
     }
+    #skills:before{
+        height: 100%;
+    }
     #portfolio #tabs .nav-tabs {
         display: flex;
         flex-direction: column;
@@ -260,7 +263,10 @@
         font-size: 15px;
     }
     .container{
-        padding: 0 20px;
+        padding: 0 15px;
+    }
+    .header-fixed {
+        padding: 12px 0;
     }
     #skills .item p {
         width: 100%;
@@ -275,6 +281,11 @@
     }
     #portfolio .info p {
         color: #FFFFFF;
+    }
+    .nav-tab {
+        color: #000000;
+        font-size: 18px;
+        margin: 0;
     }
     #contacts .box-form {
         width: auto;
