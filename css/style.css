@@ -74,7 +74,7 @@ body {
     left: 0;
     top: -200%;
     transition: 0.4s;
-    background: rgba(000, 000, 000);
+    background: #000000;
 }
 
 .burger-menu_nav ul {
@@ -708,7 +708,7 @@ header .header-top .contacts .social a img {
     margin-bottom: 30px;
 }
 .scale {
-    display: inline-block;
+    display: block;
     overflow: hidden;
 }
 .scale img {
