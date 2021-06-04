@@ -28,6 +28,9 @@
         padding: 60px 0 80px 0;
         height: auto;
     }
+    #skills:before {
+        height: 100%;
+    }
 
     #skills .section-title {
         margin-bottom: 30px;
